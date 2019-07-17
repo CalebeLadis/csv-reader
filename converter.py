@@ -2,11 +2,13 @@ file = open('receita.csv', 'r')
 
 first_line = file.readline()
 new_line = first_line.replace('@', ',')
+
 keys = []
 word = ''
 second_backspace = False
 blank = 0
 previous = ''
+#Getting columns names
 for x in new_line:
     if x == ' ':
         blank += 1
