@@ -22,9 +22,11 @@ for x in new_line:
         second_backspace = False
         blank = 0
     previous = x
-for e in range(len(keys)):
-    if keys[e] == '':
-        keys.remove(e)
+
+# TODO: Implement condition that take off all empty single quotation marks from the list
+# for e in range(len(keys)):
+#     if keys[e] == '':
+
 for e in range(len(keys)):
     keys[e] = keys[e][:-1]
 print(keys)
