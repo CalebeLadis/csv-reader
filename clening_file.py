@@ -1,5 +1,5 @@
 import csv
-import json
+
 f = open('receita.csv', 'r')
 
 with f:
@@ -8,6 +8,7 @@ with f:
     header = []
     element = []
     dic = {}
+
     for row in reader:
         if is_header:
             header = row
@@ -19,14 +20,8 @@ with f:
                 dic[el_column] = item
             element.append(dic)
             dic = {}
+
     # TODO: Save dictionarie list as a json file
-    # with open('json.json', 'w') as new_file:
-    #     data = ''
-    #     for item in element:
-    #         temp = str(item)
-    #         data += (temp + ',')
-    #     print(data)
-    #     json.dump(data, new_file)
 
 
 
