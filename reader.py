@@ -1,5 +1,4 @@
 import csv
-# TODO: Save dictionarie list as a json file
 
 
 def csv_reader(csv_file):
